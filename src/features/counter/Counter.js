@@ -3,7 +3,7 @@ import {
     increment,
     decrement,
     reset,
-    incrementByCount
+    incrementByAmount
      } from './counterSlice';
 
 import { useState } from 'react'
@@ -35,7 +35,7 @@ const Counter =()=> {
             onChange= {(e)=> setIncrementAmount(e.target.value)} />
 
             <div>
-                <button onClick={() => dispatch(incrementByCount(addValue)) }>
+                <button onClick={() => dispatch(incrementByAmount(addValue)) }>
                     Add Amount
                 </button>
                 <button onClick={resetAll}>Reset</button>

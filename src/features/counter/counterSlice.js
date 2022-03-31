@@ -19,13 +19,13 @@ export const counterSlice =  createSlice ({
         reset : (state) => {
             state.count = 0;
         },
-        incrementByCount: (state, action ) => {
+        incrementByAmount: (state, action ) => {
             state.count += action.payload;
         }
     }
 })
 
-export const { increment, decrement, reset, incrementByCount } = counterSlice.actions;
+export const { increment, decrement, reset, incrementByAmount } = counterSlice.actions;
 
 // we need to export default reducer because the store will need that
 export default counterSlice.reducer;
